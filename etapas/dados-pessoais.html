@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+
 </head>
 <body>
     <main>
@@ -14,36 +16,39 @@
             <p>Essa etapa foi desenvolvida para a coleta dos dados pessoais do cliente para a realização da contratação.</p>
         </header>
         <hr>
-        <div>
+
+        <div class="h2">
             <h2>Olá, bem-vindo!</h2>
 
             <p>Nos conte seus dados para contato, caso haja necessidade de falar com você</p>
         </div>
 
-        <form action="">
-            <fieldset>
-                <div>
-                    <label for="">Nome completo</label>
-                    <input type="text" placeholder="Digite seu nome completo">
-                </div>
-            </fieldset>
+        <div id="form-pessoais">
+            <form action="">
+                
+                    <label for="nome">Nome completo</label>
+                    <div class="input">
+                        <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome">
+                    </div>
+                
+                    <label for="email">Email</label>
+                    <div class="input">
+                        <input type="email" placeholder="Informe seu melhor email" id="email" name="email">
+                    </div>
+        
+                    <label for="tel">Telefone</label>
+                    <div class="input">
+                        <input type="tel" placeholder="Informe o telefone" id="tel" name="tel">
+                    </div>
+               
+            </form>
+        </div>
 
-            <fieldset>
-                <div>
-                    <label for="">Email</label>
-                    <input type="email" placeholder="Informe o email">
-                </div>
-            </fieldset>
+        <div class="botao">
+            <a href="./dados-bike.html"><button id="btn1">Continuar</button></a>
+        </div>    
+        <br>         
 
-            <fieldset>
-                <div>
-                    <label for="">Telefone</label>
-                    <input type="tel" placeholder="Informe o telefone">
-                </div>
-            </fieldset>
-        </form>
-        <br>
-        <a href="./dados-bike.html"><button>Próximo</button></a>
     </main>
 </body>
 </html>
